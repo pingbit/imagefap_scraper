@@ -6,17 +6,17 @@ A web scraper for imagefap, scraping galleries.
 
 **Example 1)** Download all images from a single gallery. The `-v` argument enables verbose printing, and the `p` argument enables parallelism.
 ```
-python imagefap_scraper.py --gallery_urls 'http://www.imagefap.com/pictures/7225724/Best-Dirty-blonde-hot-naked-nude' -v -p
+python imagefap_scraper.py --gallery_urls 'http://www.imagefap.com/pictures/123/BLAH-BLAH' -v -p
 ```
 
 **Example 2)** Download all images from two galleries. The `-v` argument enables verbose printing, and the `p` argument enables parallelism.
 ```
-python imagefap_scraper.py --gallery_urls 'http://www.imagefap.com/gallery.php?gid=7225937' 'http://www.imagefap.com/gallery.php?gid=7225933' -v -p
+python imagefap_scraper.py --gallery_urls 'http://www.imagefap.com/gallery.php?gid=1234' 'http://www.imagefap.com/gallery.php?gid=12345' -v -p
 ```
 
 **Example 3)** Download all images from a single gallery. The `-ids` argument tells the scraper to name the downloaded gallery and pictures using gallery and picture `ids` instead of human-readable names.
 ```
-python imagefap_scraper.py --gallery_urls 'http://www.imagefap.com/pictures/7225724/Best-Dirty-blonde-hot-naked-nude' -v -p -ids
+python imagefap_scraper.py --gallery_urls 'http://www.imagefap.com/pictures/123/BLAH-BLAH' -v -p -ids
 ```
 
 
