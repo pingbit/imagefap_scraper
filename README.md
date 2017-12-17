@@ -1,27 +1,28 @@
 # imagefap_scraper
-A web scraper for imagefap, with features:
+A web scraper for imagefap. The main features include:
 
-- Scraping of single, or multiple, galleries.
-- Scraping of every gallery on a category page.
-- Parallel scraping of images withing each gallery scraped.
-- Storage as human-readable, or using gallery and image `IDs`.
+- Scraping of single, or multiple, *galleries*.
+- Scraping of every gallery on a *category page*.
+- *Parallel scraping* of images withing each gallery scraped.
+- Storage as *human-readable*, or using gallery and image `IDs`.
 
 See the examples below for more information.
-
-
 ## Examples
 
-**Example 1)** Download all images from a single gallery. The `-v` argument enables verbose printing, and the `-p` argument enables parallelism.
+**Example 1)** 
+Download all images from a single gallery. The `-v` argument enables verbose printing, and the `-p` argument enables parallelism.
 ```
 python imagefap_scraper.py --gallery_urls 'http://www.imagefap.com/pictures/123/BLAH-BLAH' -v -p
 ```
 
-**Example 2)** Download all images from two galleries.
+**Example 2)** 
+Download all images from two galleries.
 ```
 python imagefap_scraper.py --gallery_urls 'http://www.imagefap.com/gallery.php?gid=1234' 'http://www.imagefap.com/gallery.php?gid=12345' -v -p
 ```
 
-**Example 3)** Download all images from a single gallery. The `-ids` argument tells the scraper to name the downloaded gallery and pictures using gallery and picture `ids` instead of human-readable names.
+**Example 3)** 
+Download all images from a single gallery. The `-ids` argument tells the scraper to name the downloaded gallery and pictures using gallery and picture `ids` instead of human-readable names.
 ```
 python imagefap_scraper.py --gallery_urls 'http://www.imagefap.com/pictures/123/BLAH-BLAH' -v -p -ids
 ```
@@ -30,12 +31,6 @@ python imagefap_scraper.py --gallery_urls 'http://www.imagefap.com/pictures/123/
 
 - Written using Python 3.6.3.
 - Dependencies: `bs4`
-
-### Installation
-
-1. sdf
-2. sdf
-
 
 
 ## Full documentation
