@@ -63,7 +63,7 @@ def process_args(arguments):
     if args.gallery_urls:
         for gallery_url in args.gallery_urls:
             scrape_gallery(gallery_url = gallery_url.strip(), 
-                           save_location = args.save_location, 
+                           #save_location = args.save_location, 
                            ids = args.ids, verbose = args.verbose,
                            parallel = args.parallel)
             
@@ -72,7 +72,7 @@ def process_args(arguments):
     if args.category_url:
         for gallery_url in galleries_from_category_url(args.category_url.strip()):
             scrape_gallery(gallery_url = gallery_url.strip(), 
-                           save_location = args.save_location, 
+                           #save_location = args.save_location, 
                            ids = args.ids, verbose = args.verbose,
                            parallel = args.parallel)
 
