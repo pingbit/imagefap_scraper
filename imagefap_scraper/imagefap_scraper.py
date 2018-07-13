@@ -62,10 +62,11 @@ def process_args(arguments):
     # The user wants to scrape one or more galleries by URL
     if args.gallery_urls:
         for gallery_url in args.gallery_urls:
-            scrape_gallery(gallery_url = gallery_url.strip(), 
-                           #save_location = args.save_location, 
-                           ids = args.ids, verbose = args.verbose,
-                           parallel = args.parallel)
+            for gallery_url_fine in gallery_url.split(' '):
+                scrape_gallery(gallery_url = gallery_url_fine.strip(), 
+                               #save_location = args.save_location, 
+                               ids = args.ids, verbose = args.verbose,
+                               parallel = args.parallel)
             
             
     # The user wants to scrape a category
