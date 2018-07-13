@@ -27,6 +27,12 @@ Download all images from a single gallery. The `-ids` argument tells the scraper
 python imagefap_scraper.py --gallery_urls 'http://www.imagefap.com/pictures/123/BLAH-BLAH' -v -p -ids
 ```
 
+**Example 4)** 
+Download from a file with gallery names.
+```
+cat galleries.txt | xargs python imagefap_scraper.py -p -v --gallery_urls
+```
+
 ## Technical information
 
 - Written using Python 3.6.3.
